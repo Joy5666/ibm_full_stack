@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 0%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.container {
+    display: flex;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 900px;
+    position: relative;
+}
+.left-section {
+    flex: 1;
+    padding: 20px;
+}
+.logo {
+    width: 100px;
+    height: auto;
+}
+.left-section h1 {
+    font-size: 24px;
+    color: #333;
+}
+.left-section p {
+    font-size: 18px;
+    color: #666;
+}
+.download-buttons img {
+    width: 140px;
+    margin-right: 10px;
+}
+.right-section {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    
+}
+.payment-box {
+    background: #e0f7fa;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 160px;
+    height: auto;
+    
+}
+.payment-box h2 {
+    font-size: 18px;
+    color: #00897b;
+}
+.payment-box p {
+    font-size: 10px;
+    color: #555;
+}
+.avatars {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.avatars img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+}
+.avatars img:nth-child(1) { top: -80px; left: 50%; transform: translateX(-50%); }
+.avatars img:nth-child(2) { top: 190px; left: 85%; transform: translateX(-50%); }
+.avatars img:nth-child(3) { top: 30px; left: 120%; transform: translateX(-50%); }
+.avatars img:nth-child(4) { top: 100px; left: 125%; transform: translateX(-50%); }
+.avatars img:nth-child(5) { top: 90px; left: -20%; transform: translateX(-50%); }
+.avatars img:nth-child(6) { top: 10px; left: -20%; transform: translateX(-50%); }
+.avatars img:nth-child(7) { top: 190px; left: 15%; transform: translateX(-50%); }
+
+.avatars img {
+    width: 60px; /* Increase from 40px */
+    height: 60px; /* Increase from 40px */
+    border-radius: 50%;
+    position: absolute;
+    content: url('https://tse4.mm.bing.net/th?id=OIP.JmMkZ_mIPAUTCCvuPfshBQHaHa&pid=Api&P=0&h=180');
+}
