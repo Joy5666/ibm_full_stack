@@ -1,28 +1,43 @@
 let form = document.getElementById("userform");
-form.addEventListener("submit", (e)=>{
+
+form.addEventListener("submit",(e)=>{
     e.preventDefault();
+
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;   
-    let phonenumber = document.getElementById("phone number").value;
+    let Number = document.getElementById("Number").value;
+    let password = document.getElementById("password").value;
+    let ConfirmPassword = document.getElementById("ConfirmPassword").value;
+
     let obj = {
-        name , email, password, phonenumber
-        if obj.password===confirm_password{
-            return alert("password does not match");
+        name,email,Number,password,ConfirmPassword
+    } 
+
+    if (obj.password != obj.ConfirmPassword) {
+        return alert("Password don't match");
     }
 
-    console.log(name.value,email.value,password.value,phonenumber.value);
-    console.log(obj);
+    console.log(name);
+
     
     let tr = document.createElement("tr");
+
     let td1 = document.createElement("td");
-    td1.innerHTML = name;
+    td1.innerText = obj.name;
+
     let td2 = document.createElement("td");
-    td2.innerHTML = email;  
+    td2.innerText = obj.email;
+
     let td3 = document.createElement("td");
-    td3.innerHTML = password;
+    td3.innerText = obj.Number;
+
     let td4 = document.createElement("td");
-    td4.innerHTML = phonenumber;
-    tr.appendChild(td1,td2,td3,td4);
-    document.getElementById("tbody").appendChild(tr);
+    td4.innerText = obj.password;
+
+    let td5 = document.createElement("td");
+    td5.innerText = obj.ConfirmPassword;
+
+    tr.append(td1, td2, td3, td4, td5);
+
+    document.getElementById("tbody").append(tr);
 });
