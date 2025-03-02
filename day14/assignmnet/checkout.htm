@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="abc.css">
+</head>
+<body>
+    <h1>Checkout</h1>
+    
+    <form id="checkoutForm">
+        <h2>User Details</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" required></textarea>
+
+        <label for="paymentMethod">Payment Method:</label>
+        <select id="paymentMethod" required>
+            <option value="cod">Cash on Delivery</option>
+            <option value="upi">UPI Payment</option>
+        </select>
+    </form>
+    
+    <h2>Order Summary</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="orderSummary"></tbody>
+    </table>
+    
+    <h2>Total: $<span id="totalAmount">0.00</span></h2>
+    
+    <button id="placeOrder">Place Order</button>
+    <button id="backToCart">Back to Cart</button>
+    
+    <script src="checkout.js"></script>
+</body>
+</html>
